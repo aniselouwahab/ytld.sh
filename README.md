@@ -41,24 +41,24 @@ Ce projet permet de suivre des chaînes YouTube et de télécharger automatiquem
 
 # 1️-Cloner le dépôt
 
-git clone https://github.com/aniselouwahab/ytld.sh.git
+##### git clone https://github.com/aniselouwahab/ytld.sh.git
 
-cd ytld.sh
+##### cd ytld.sh
 
 # 2-Corriger le format du script (IMPORTANT)
 Si le script a été modifié sous Windows, il faut corriger les fins de lignes :
 
-sudo apt install dos2unix -y
+##### sudo apt install dos2unix -y
 
-dos2unix ytld.sh
+##### dos2unix ytld.sh
 
 # 3️-Rendre le script exécutable
 
-chmod +x ytld.sh
+##### chmod +x ytld.sh
 
 # 4️-Lancer le script
 
-./ytld.sh
+##### ./ytld.sh
 
 NB:
 
@@ -130,9 +130,9 @@ Youtube/
 └── .gitattributes
 
 
-~/.auto-ytdlp.conf
+##### ~/.auto-ytdlp.conf
 
-/usr/local/bin/auto-ytdlp
+##### /usr/local/bin/auto-ytdlp
 
 
 # Dépannage
@@ -146,8 +146,8 @@ Permission refusée: chmod +x ytld.sh
 
 # Auteur
 
-Anis El Ouwahab
+##### Anis El Ouwahab
 
-  GitHub : https://github.com/aniselouwahab
+ ##### GitHub : https://github.com/aniselouwahab
 
   
