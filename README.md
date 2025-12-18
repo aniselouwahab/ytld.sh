@@ -43,7 +43,7 @@ Ce projet permet de suivre des chaînes YouTube et de télécharger automatiquem
 
 git clone https://github.com/aniselouwahab/Ytld.sh.git
 
-cd Youtube
+cd Ytld.sh
 
 # 2-Corriger le format du script (IMPORTANT)
 Si le script a été modifié sous Windows, il faut corriger les fins de lignes :
