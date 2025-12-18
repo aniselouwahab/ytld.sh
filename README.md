@@ -41,9 +41,9 @@ Ce projet permet de suivre des chaînes YouTube et de télécharger automatiquem
 
 # 1️-Cloner le dépôt
 
-git clone https://github.com/aniselouwahab/Ytld.sh.git
+git clone https://github.com/aniselouwahab/ytld.sh.git
 
-cd Ytld.sh
+cd ytld.sh
 
 # 2-Corriger le format du script (IMPORTANT)
 Si le script a été modifié sous Windows, il faut corriger les fins de lignes :
