@@ -41,7 +41,7 @@ Ce projet permet de suivre des chaînes YouTube et de télécharger automatiquem
 
 # 1️-Cloner le dépôt
 
-git clone https://github.com/aniselouwahab/Youtube.git
+git clone https://github.com/aniselouwahab/Ytld.sh.git
 
 cd Youtube
 
