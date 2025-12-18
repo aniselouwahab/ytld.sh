@@ -3,4 +3,4 @@
 Gestionnaire automatisé et interactif de téléchargements YouTube basé sur yt-dlp.
 Ce projet permet de suivre des chaînes YouTube et de télécharger automatiquement les nouvelles vidéos, avec une configuration simple via un menu en ligne de commande.
 
-Capture d'écran 2025-12-18 223013.png
+![image alt]
