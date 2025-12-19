@@ -1,81 +1,76 @@
+
 # AUTO-YTDLP PRO
 
-Gestionnaire automatisé et interactif de téléchargements YouTube basé sur yt-dlp.
-Ce projet permet de suivre des chaînes YouTube et de télécharger automatiquement les nouvelles vidéos, avec une configuration simple via un menu en ligne de commande.
+Gestionnaire automatisé et interactif de téléchargements YouTube basé sur yt-dlp. Ce projet permet de suivre des chaînes YouTube et de télécharger automatiquement les nouvelles vidéos, avec une configuration simple via un menu en ligne de commande.
 
 ![image alt](https://github.com/aniselouwahab/ytld.sh/blob/507d0aebc5ee6e260eff995e32869636d1f60972/Capture%20d'%C3%A9cran%202025-12-18%20223013.png)
 
-# Fonctionnalités
+## Fonctionnalités
+ Téléchargement automatique avec yt-dlp
+
+  . Téléchargement des vidéos récentes (X derniers jours)
+
+  . Dossier personnalisé par chaîne
+
+  . Historique des vidéos déjà téléchargées (pas de doublons)
+
+  . Interface interactive (menu CLI)
+
+  . Paramètres modifiables à la volée
+
+  . Installation système automatique
+
+## Prérequis
+  .Linux (Ubuntu / Debian recommandé)
+
+  .Bash
+
+  .Accès sudo
+
+  .Connexion Internet
+
+    -> yt-dlp est installé automatiquement si nécessaire.
 
 
-. Téléchargement automatique avec yt-dlp
 
-. Téléchargement des vidéos récentes (X derniers jours)
-
-. Dossier personnalisé par chaîne
-
-. Historique des vidéos déjà téléchargées (pas de doublons)
-
-. Interface interactive (menu CLI)
-
-. Paramètres modifiables à la volée
-
-.Installation système automatique
+## Installation
+ ### 1️-Cloner le dépôt
 
 
-# Prérequis
+```bash
+ git clone https://github.com/aniselouwahab/ytld.sh.git
+ cd ytld.sh
+```
 
+### 2-Corriger le format du script (IMPORTANT)
+   Si le script a été modifié sous Windows, il faut corriger les fins de lignes :
+  ```bash
+ sudo apt install dos2unix -y
+ dos2unix ytld.sh
+```
 
-.Linux (Ubuntu / Debian recommandé)
+### 3️-Rendre le script exécutable
 
-.Bash
+```bash
+ chmod +x ytld.sh
+```
 
-.Accès sudo
-
-.Connexion Internet
-
--> yt-dlp est installé automatiquement si nécessaire.
-
-
-# Installation
-
-# 1️-Cloner le dépôt
-
-##### git clone https://github.com/aniselouwahab/ytld.sh.git
-
-##### cd ytld.sh
-
-# 2-Corriger le format du script (IMPORTANT)
-Si le script a été modifié sous Windows, il faut corriger les fins de lignes :
-
-##### sudo apt install dos2unix -y
-
-##### dos2unix ytld.sh
-
-# 3️-Rendre le script exécutable
-
-##### chmod +x ytld.sh
-
-# 4️-Lancer le script
-
-##### ./ytld.sh
-
+### 4️-Lancer le script
 NB:
 
--Au premier lancement, le script proposera une installation système :    Voulez-vous installer ce script dans votre système pour l'utiliser partout ? [Y/n]
+  -Au premier lancement, le script proposera une installation système :    Voulez-vous installer ce script dans votre système pour l'utiliser partout ? [Y/n]
 
--Si vous acceptez :
+  -Si vous acceptez :
 
-  .le script est copié dans /usr/local/bin/auto-ytdlp
+     .le script est copié dans /usr/local/bin/auto-ytdlp
+     .il devient accessible globalement avec :  auto-ytdlp 
 
-  .il devient accessible globalement avec :  auto-ytdlp 
 
 
 # Utilisation
+ ## 1-Menu principal
 
-# 1-Menu principal
-
-[1] Lancer tous les téléchargements
+ [1] Lancer tous les téléchargements
 
 [2] Ajouter une nouvelle chaîne
 
@@ -85,21 +80,20 @@ NB:
 
 [q] Quitter
 
+ ## 2-Ajouter une chaîne
 
-# 2-Ajouter une chaîne
+  Informations demandées :
 
-Informations demandées :
+   .Nom de la chaîne
 
-  .Nom de la chaîne
+   .URL (chaîne ou playlist YouTube)
 
-  .URL (chaîne ou playlist YouTube)
+   .Dossier de téléchargement (ex: ~/Videos/Youtube)
 
-  .Dossier de téléchargement (ex: ~/Videos/Youtube)
-
-Les chaînes sont stockées dans :  ~/.auto-ytdlp.conf
+->Les chaînes sont stockées dans :  ~/.auto-ytdlp.conf
 
 
-# 3-Téléchargements
+## 3-Téléchargements
 
   .Télécharge uniquement les vidéos récentes
 
@@ -109,10 +103,9 @@ Les chaînes sont stockées dans :  ~/.auto-ytdlp.conf
 
 Chaque dossier contient : .archive qui Empêche le re-téléchargement des mêmes vidéos.
 
+## 4-Paramètres
 
-# 4-Paramètres
-
-  .Nombre de jours à remonter
+   .Nombre de jours à remonter
 
   .Nombre maximum de vidéos par chaîne
 
@@ -121,33 +114,45 @@ Configurables depuis le menu principal.
 
 # Structure du projet
 
-Youtube/
+ ```bash
+ Youtube/
 
 ├── ytld.sh
 
 ├── README.md
 
 └── .gitattributes
+```
 
+```bash
+~/.auto-ytdlp.conf
+```
 
-##### ~/.auto-ytdlp.conf
-
-##### /usr/local/bin/auto-ytdlp
-
+```bash
+/usr/local/bin/auto-ytdlp
+```
 
 # Dépannage
 
+
+```bash
 Erreur : /bin/bash^M
 
 Solution : dos2unix ytld.sh
 
 Permission refusée: chmod +x ytld.sh
-
-
+```
+   
 # Auteur
 
-##### Anis El Ouwahab
+ Anis El Ouwahab
 
- ##### GitHub : https://github.com/aniselouwahab
+   GitHub : https://github.com/aniselouwahab
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
 
   
