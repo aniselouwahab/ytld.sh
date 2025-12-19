@@ -61,16 +61,6 @@ Gestionnaire automatisé et interactif de téléchargements YouTube basé sur yt
  ./ytld.sh
 ```
 
-NB:
-
-  -Au premier lancement, le script proposera une installation système :    Voulez-vous installer ce script dans votre système pour l'utiliser partout ? [Y/n]
-
-  -Si vous acceptez :
-
-     .le script est copié dans /usr/local/bin/auto-ytdlp
-     .il devient accessible globalement avec :  auto-ytdlp 
-
-
 
 # Utilisation
  ## 1-Menu principal
