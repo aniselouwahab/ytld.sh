@@ -56,6 +56,11 @@ Gestionnaire automatisé et interactif de téléchargements YouTube basé sur yt
 ```
 
 ### 4️-Lancer le script
+
+```bash
+ ./ytld.sh
+```
+
 NB:
 
   -Au premier lancement, le script proposera une installation système :    Voulez-vous installer ce script dans votre système pour l'utiliser partout ? [Y/n]
